@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Llm-lL-Icb"/>
+                        <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pbs-eN-fI7">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HeO-XE-uJB">
+                                        <rect key="frame" x="42" y="286" width="291" height="113"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Clear" translatesAutoresizingMaskIntoConstraints="NO" id="W5U-5d-wHf">
+                                                <rect key="frame" x="0.0" y="0.0" width="107" height="113"/>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Clouds" translatesAutoresizingMaskIntoConstraints="NO" id="HM9-jx-hK5">
+                                                <rect key="frame" x="107" y="0.0" width="92" height="113"/>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Thunderstorm" translatesAutoresizingMaskIntoConstraints="NO" id="jKt-kl-b3Y">
+                                                <rect key="frame" x="199" y="0.0" width="92" height="113"/>
+                                            </imageView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="113" id="UxY-sf-hlj"/>
+                                            <constraint firstAttribute="width" constant="291" id="d6M-FL-l0r"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="j1l-Xo-j2x">
+                                        <rect key="frame" x="75" y="226" width="224.5" height="37"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RainyShinyCloudy" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YEX-01-oCl">
+                                                <rect key="frame" x="0.0" y="0.0" width="224.5" height="37"/>
+                                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="27"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="37" id="q0H-Um-VNS"/>
+                                            <constraint firstAttribute="width" constant="224.5" id="ucg-Uq-Yvt"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.13525548966553536" green="0.62437993881044229" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="j1l-Xo-j2x" firstAttribute="top" secondItem="Pbs-eN-fI7" secondAttribute="top" constant="226" id="4KK-Ty-cEN"/>
+                                    <constraint firstItem="j1l-Xo-j2x" firstAttribute="leading" secondItem="Pbs-eN-fI7" secondAttribute="leading" constant="75" id="CJU-cj-Oiu"/>
+                                    <constraint firstItem="HeO-XE-uJB" firstAttribute="top" secondItem="j1l-Xo-j2x" secondAttribute="bottom" constant="23" id="Itq-dT-dyp"/>
+                                    <constraint firstItem="HeO-XE-uJB" firstAttribute="leading" secondItem="Pbs-eN-fI7" secondAttribute="leading" constant="42" id="OLx-XW-gLP"/>
+                                    <constraint firstAttribute="trailing" secondItem="j1l-Xo-j2x" secondAttribute="trailing" constant="75.5" id="qt4-X9-cXP"/>
+                                    <constraint firstAttribute="trailing" secondItem="HeO-XE-uJB" secondAttribute="trailing" constant="42" id="wzm-wF-KxB"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Pbs-eN-fI7" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="a96-i3-Ql7"/>
+                            <constraint firstItem="Pbs-eN-fI7" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="g6O-DK-juW"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="Pbs-eN-fI7" secondAttribute="bottom" id="mWq-mN-4i0"/>
+                            <constraint firstAttribute="trailing" secondItem="Pbs-eN-fI7" secondAttribute="trailing" id="tnl-gw-9bC"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52" y="374.66266866566718"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Clear" width="107" height="107"/>
+        <image name="Clouds" width="92" height="68"/>
+        <image name="Thunderstorm" width="92" height="113"/>
+    </resources>
+</document>
