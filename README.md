@@ -1,1 +1,1 @@
-# RainyShinyCloudy
+# Developed a smart phone application in Swift that automatically detects the user's current location and provides them with the weather. The data being pulled using an API call. The app also shows the weather for the next 7 days. The user also has the option to switch between celsius and fahrenheit
